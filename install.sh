@@ -17,7 +17,7 @@ echo "[3/4] ดาวน์โหลด STAR Tool..."
 mkdir -p ~/star-tool && cd ~/star-tool
 
 # ดาวน์โหลดไฟล์จาก Release
-wget -O tool.zip "https://github.com/mzxhub99/Tool-free/releases/download/v1.0/Rejoin.star.zip"
+wget -O tool.zip "https://github.com/mzxhub99/Tool-free/releases/download/Star-tool/star_v33.zip"
 
 unzip -o -q tool.zip
 rm tool.zip
