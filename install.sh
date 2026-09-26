@@ -27,7 +27,7 @@ if [ -f "star_plus_5.1.2.py" ]; then
   echo "  ✔ ไฟล์สมบูรณ์"
   echo ""
   echo "[✅] ติดตั้งเสร็จ!"
-  echo "พิมพ์: cd ~/star-tool && python star_v33.py"
+  echo "พิมพ์: cd ~/star-tool && python star_plus_5.1.2.py"
 else
   echo "  ❌ ไม่พบไฟล์ star_plus_5.1.2.py"
 fi
