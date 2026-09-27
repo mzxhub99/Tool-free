@@ -8,7 +8,7 @@
 set -e
 
 URL="https://github.com/mzxhub99/Tool-free/releases/download/Star-tool/star_plus_5.1.2.zip"
-FILE="star_plus_5.1.3.py"
+FILE="star_plus_5.1.2.py"
 DIR="$HOME/star-tool"
 
 # ถ้าถูกเรียกด้วย sh ให้สลับมา bash
@@ -164,7 +164,7 @@ step_ok "สิทธิ์เข้าถึงไฟล์พร้อม"
 step_do "[5/5] ดาวน์โหลด STAR Tool จาก GitHub"
 mkdir -p "$DIR"
 cd "$DIR"
-spin_on "กำลังโหลด star_plus_5.1.3.zip"
+spin_on "กำลังโหลด star_plus_5.1.2.zip"
 if ! wget -q -O tool.zip "$URL"; then
   spin_off; rm -f tool.zip
   die "ดาวน์โหลดไม่สำเร็จ — เช็คอินเทอร์เน็ต / ลิงก์ Release แล้วลองใหม่"
