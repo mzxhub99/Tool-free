@@ -8,7 +8,7 @@
 set -e
 
 URL="https://github.com/mzxhub99/Tool-free/releases/download/Star-tool/STARPLUS_ROOT_v5.1.3.zip"
-FILE="star_plus_5.1.2.py"
+FILE="STARPLUS_ROOT_v5.1.3.py"
 DIR="$HOME/star-tool"
 
 # ถ้าถูกเรียกด้วย sh ให้สลับมา bash
