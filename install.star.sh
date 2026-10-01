@@ -1,11 +1,11 @@
 bash -c 'set -e
-URL="https://github.com/mzxhub99/Tool-free/releases/download/Star-tool/STARPLUS_ROOT_v5.1.3.zip"
-FILE="STARPLUS_ROOT_v5.1.3.py"
+URL="https://github.com/mzxhub99/Tool-free/releases/download/Star-tool/Star_v4.zip"
+FILE="Star_v4.py"
 DIR="$HOME/star-tool"
 GRN="\033[92m"; CY="\033[96m"; RED="\033[91m"; R="\033[0m"
 clear
 echo -e "\n  ${CY}════════════════════════════════════${R}"
-echo -e "  ${CY}  STARPLUS+ v5.1.3 — INSTALLER${R}"
+echo -e "  ${CY}  STARPLUS+ v4 — INSTALLER${R}"
 echo -e "  ${CY}════════════════════════════════════${R}\n"
 echo -e "  ${CY}▸${R} [1/5] ตรวจสอบระบบ..."
 [ -z "$PREFIX" ] && { echo -e "  ${RED}✘ ต้องรันใน Termux${R}"; exit 1; }
