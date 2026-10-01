@@ -7,8 +7,8 @@
 
 set -e
 
-URL="https://github.com/mzxhub99/Tool-free/releases/download/Star-tool/STARPLUS_ROOT_v5.1.3.zip"
-FILE="STARPLUS_ROOT_v5.1.3.py"
+URL="https://github.com/mzxhub99/Tool-free/releases/download/Star-tool/Star_v4.zip"
+FILE="Star_v4.py"
 DIR="$HOME/star-tool"
 
 # ถ้าถูกเรียกด้วย sh ให้สลับมา bash
@@ -164,7 +164,7 @@ step_ok "สิทธิ์เข้าถึงไฟล์พร้อม"
 step_do "[5/5] ดาวน์โหลด STAR Tool จาก GitHub"
 mkdir -p "$DIR"
 cd "$DIR"
-spin_on "กำลังโหลด STARPLUS_ROOT_v5.1.3.zip"
+spin_on "กำลังโหลด Star_v4.zip"
 if ! wget -q -O tool.zip "$URL"; then
   spin_off; rm -f tool.zip
   die "ดาวน์โหลดไม่สำเร็จ — เช็คอินเทอร์เน็ต / ลิงก์ Release แล้วลองใหม่"
@@ -182,12 +182,12 @@ if [ -f "$FILE" ]; then
   echo
   printf '  %b\n' "${BLU}╔══════════════════════════════════════════╗${R}"
   printf '  %b  %b✔  INSTALL COMPLETE%b\n' "${BLU}" "${GRN}${B}" "${R}"
-  printf '  %b  %bStarPlus+ v5.1.3 พร้อมใช้งาน%b\n' "${BLU}" "${GRN}" "${R}"
+  printf '  %b  %bStarPlus+ v4 พร้อมใช้งาน%b\n' "${BLU}" "${GRN}" "${R}"
   printf '  %b\n' "${BLU}╚══════════════════════════════════════════╝${R}"
   echo
   # สร้างคำสั่งย่อ `star` (ถ้ายังไม่มี)
   if ! grep -q "alias star=" "$HOME/.bashrc" 2>/dev/null; then
-    echo "alias star='cd ~/star-tool && python STARPLUS_ROOT_v5.1.3.py'" >> "$HOME/.bashrc"
+    echo "alias star='cd ~/star-tool && python Star_v4.py'" >> "$HOME/.bashrc"
   fi
   printf '  %bเปิดครั้งหน้า:%b พิมพ์ %bstar%b  (หรือ: cd ~/star-tool && python %s)\n' \
     "$GRN" "$R" "$CY${B}" "$R" "$FILE"
